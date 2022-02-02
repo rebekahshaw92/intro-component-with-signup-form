@@ -1,0 +1,93 @@
+$font: 'Poppins', sans-serif;
+$GrayishBlue: hsl(246, 25%, 77%);
+$white: #fff;
+$red: hsl(0, 100%, 74%);
+
+body {
+    font-family: $font;
+}
+
+.mainHeader {
+    color: $white;
+    text-align: center;
+    margin: 50px;
+    font-weight: 700;
+    padding-top: 40px;
+    @include media-breakpoint-up(xl){
+        font-size: 42px;
+        text-align: left;
+        padding-top: 250px;
+        }
+}
+
+.subtext {
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    line-height: 2;
+    font-size: 22px;
+    color: $white;
+    @include media-breakpoint-up(xl){
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        }
+}
+
+.tryFree {
+    text-align: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 22px;
+    
+    p {
+       margin-left: 40px;
+       margin-right: 40px;
+       padding-top: 20px;
+       padding-left: 20px;
+       padding-right: 20px;
+       width: 80%;
+       @include media-breakpoint-up(xl){
+           width: 100%;
+           padding-left: 0;
+           padding-right: 0;
+           margin-left: 0;
+       }
+    }
+    span {
+        color: $GrayishBlue;
+        font-weight: 600;
+    }
+    @include media-breakpoint-up(xl){
+        margin-top: 100px;
+    }
+}
+
+.terms {
+    text-align: center;
+    font-size: 18px;
+    color: $GrayishBlue;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    line-height: 2;
+    span {
+        color: $red;
+        font-weight: 700;
+    }
+    @include media-breakpoint-up(xl){
+        font-size: 15px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 20px;
+        }
+}
+
+.claim-btn {
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
